@@ -77,4 +77,4 @@ Make sure this step is completed before executing the main pipeline.
 ---
 
 
-Model weights are downloaded separately using `download_weights.py`.
+Model weights are downloaded separately using `add_weights.py`.
