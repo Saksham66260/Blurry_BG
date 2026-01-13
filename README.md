@@ -10,7 +10,7 @@ This project focuses on **image quality improvement**, **sharpness analysis**, a
 Blurry or defocused backgrounds are common in images captured under:
 - low-light conditions  
 - shallow depth-of-field  
-- motion blur  
+
 - camera focus limitations  
 
 This project explores a **learning-based approach** to improve perceptual quality by:
@@ -22,17 +22,17 @@ The pipeline is designed to be **modular**, **experiment-friendly**, and suitabl
 
 ---
 
-## 🧠 Key Features
+##  Key Features
 
-- 📌 Sharpness and blur-aware processing  
-- 📌 Deep learning–based enhancement (Restormer-based architecture)  
-- 📌 Modular pipeline for easy experimentation  
-- 📌 Clean evaluation-ready structure  
-- 📌 No unnecessary binaries or environments committed  
+-  Sharpness and blur-aware processing  
+-  Deep learning–based enhancement (Restormer-based architecture)  
+-  Modular pipeline for easy experimentation  
+-  Clean evaluation-ready structure  
+-  No unnecessary binaries or environments committed  
 
 ---
 
-## 🏗️ Repository Structure
+##  Repository Structure
 
 Blurry_BG/
 │
@@ -46,10 +46,11 @@ Blurry_BG/
 ├── requirements.txt # Dependencies
 ├── .gitignore # Clean repo rules
 └── README.md
+ - add_weights.py
 
 ---
 
-## 📦 Model Weights
+##  Model Weights
 
 This project does **not** include pretrained model weights in the repository to keep it lightweight and GitHub-friendly.
 
@@ -63,32 +64,23 @@ Make sure this step is completed before executing the main pipeline.
 
 ---
 
-## 2️⃣ Update the *Usage* section (small tweak)
+##  Update the *Usage* section (small tweak)
 
 Change your usage section to:
 
-```md
-## ▶️ Usage
+
+##  Usage
 
 1. Download model weights:
 ```bash
 python download_weights.py
 Run the enhancement pipeline:
 python pipeline.py
+Run metrics.py to get detailed analysis(might take some time)
 
-This makes the workflow crystal clear.
+
 
 ---
 
-## 3️⃣ Update the *What’s NOT Included* section
-
-Replace that section with:
-
-```md
-## 🚫 What’s NOT Included (by design)
-
-- ❌ Virtual environments (`venv/`)
-- ❌ Pretrained model weights (`.pth`)
-- ❌ System-generated files
 
 Model weights are downloaded separately using `download_weights.py`.
