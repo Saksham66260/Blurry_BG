@@ -1,0 +1,13 @@
+# virtual environments
+venv/
+.venv/
+
+# python
+__pycache__/
+*.pyc
+
+# model weights
+*.pth
+
+# system
+.DS_Store

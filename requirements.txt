@@ -1,0 +1,25 @@
+# Core Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Computer Vision
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+
+# Image Processing
+Pillow>=10.0.0
+scikit-image>=0.21.0
+
+# Scientific Computing
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Data Analysis & Visualization
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# MiDaS Dependencies (auto-installed via torch.hub)
+timm>=0.9.0
+
+# Optional but recommended
+tqdm>=4.65.0
