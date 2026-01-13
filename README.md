@@ -32,19 +32,21 @@ The pipeline is designed to be **modular**, **experiment-friendly**, and suitabl
 
 ---
 
-##  Repository Structure
+## 📁 Repository Structure
+
+
 Blurry_BG/
 │
 ├── restormer/
-│   ├── restormer_arch.py
-│   ├── restormer_sharpening.py
-│   └── model_zoo/
+│   ├── restormer_arch.py        # model architecture
+│   ├── restormer_sharpening.py  # enhancement logic
+│   └── model_zoo/               # (weights excluded from git)
 │
-├── pipeline.py
-├── metrics.py
-├── add_weights.py
-├── requirements.txt
-├── .gitignore
+├── pipeline.py                  # end-to-end processing pipeline
+├── metrics.py                   # image quality metrics
+├── add_weights.py               # downloads pretrained model weights
+├── requirements.txt             # dependencies
+├── .gitignore                   # clean repo rules
 └── README.md
 
 ---
