@@ -32,7 +32,7 @@ The pipeline is designed to be **modular**, **experiment-friendly**, and suitabl
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 
 Blurry_BG/
