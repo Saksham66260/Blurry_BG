@@ -37,16 +37,16 @@ The pipeline is designed to be **modular**, **experiment-friendly**, and suitabl
 Blurry_BG/
 │
 ├── restormer/
-│ ├── restormer_arch.py # Model architecture
-│ ├── restormer_sharpening.py # Enhancement logic
-│ └── model_zoo/ # (weights excluded from git)
+│   ├── restormer_arch.py        # model architecture
+│   ├── restormer_sharpening.py  # enhancement logic
+│   └── model_zoo/               # (weights excluded from git)
 │
-├── pipeline.py # End-to-end processing pipeline
-├── metrics.py # Image quality metrics
-├── requirements.txt # Dependencies
-├── .gitignore # Clean repo rules
+├── pipeline.py                  # end-to-end processing pipeline
+├── metrics.py                   # image quality metrics
+├── add_weights.py               # downloads pretrained model weights
+├── requirements.txt             # dependencies
+├── .gitignore                   # clean repo rules
 └── README.md
- - add_weights.py
 
 ---
 
@@ -56,7 +56,7 @@ This project does **not** include pretrained model weights in the repository to 
 
 Before running the pipeline, download the required weights using:
 
-```bash
+
 python download_weights.py
 This will automatically place the model file at:
 restormer/model_zoo/defocus_deblurring.pth
@@ -72,8 +72,8 @@ Change your usage section to:
 ##  Usage
 
 1. Download model weights:
-```bash
-python download_weights.py
+
+python add_weights.py
 Run the enhancement pipeline:
 python pipeline.py
 Run metrics.py to get detailed analysis(might take some time)
