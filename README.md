@@ -70,15 +70,11 @@ Change your usage section to:
 
 ##  Usage
 
-1. Download model weights:
+1. Download model weights: python add_weights.py
 
-python add_weights.py
+2. Run the enhancement pipeline: python pipeline.py
 
-Run the enhancement pipeline:
-
-python pipeline.py
-
-Run metrics.py to get detailed analysis(might take some time)
+3. Run metrics.py to get detailed analysis(might take some time)
 
 
 
