@@ -63,10 +63,6 @@ Make sure this step is completed before executing the main pipeline.
 
 ---
 
-##  Update the Usage section (small tweak)
-
-Change your usage section to:
-
 
 ##  Usage
 
