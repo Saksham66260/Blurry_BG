@@ -5,7 +5,7 @@ This project focuses on **image quality improvement**, **sharpness analysis**, a
 
 ---
 
-## 🔍 Project Overview
+##  Project Overview
 
 Blurry or defocused backgrounds are common in images captured under:
 - low-light conditions  
@@ -28,7 +28,7 @@ The pipeline is designed to be **modular**, **experiment-friendly**, and suitabl
 -  Deep learning–based enhancement (Restormer-based architecture)  
 -  Modular pipeline for easy experimentation  
 -  Clean evaluation-ready structure  
--  No unnecessary binaries or environments committed  
+ 
 
 ---
 
