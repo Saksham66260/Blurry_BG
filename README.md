@@ -45,7 +45,6 @@ Blurry_BG/
 ├── metrics.py                   # image quality metrics
 ├── add_weights.py               # downloads pretrained model weights
 ├── requirements.txt             # dependencies
-├── .gitignore                   # clean repo rules
 └── README.md
 
 ---
@@ -57,14 +56,14 @@ This project does **not** include pretrained model weights in the repository to 
 Before running the pipeline, download the required weights using:
 
 
-python download_weights.py
+python add_weights.py
 This will automatically place the model file at:
 restormer/model_zoo/defocus_deblurring.pth
 Make sure this step is completed before executing the main pipeline.
 
 ---
 
-##  Update the *Usage* section (small tweak)
+##  Update the Usage section (small tweak)
 
 Change your usage section to:
 
@@ -74,8 +73,11 @@ Change your usage section to:
 1. Download model weights:
 
 python add_weights.py
+
 Run the enhancement pipeline:
+
 python pipeline.py
+
 Run metrics.py to get detailed analysis(might take some time)
 
 
