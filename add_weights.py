@@ -22,4 +22,4 @@ print("Downloading YOLOv11 segmentation model...")
 YOLO("yolo11n-seg.pt")  # auto-downloads
 print("YOLOv11 segmentation ready.")
 
-print("\n✅ All model weights ready!")
+print("\n All model weights ready!")
