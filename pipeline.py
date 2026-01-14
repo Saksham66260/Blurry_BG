@@ -54,7 +54,8 @@ from restormer.restormer_arch import Restormer
 model = Restormer()
 
 # Always load checkpoint on CPU (stable)
-checkpoint = torch.load(RESTORMER_CKPT, map_location="cpu")
+checkpoint = torch.load(RESTORMER_CKPT, map_location="cpu", weights_only=False)
+
 if "params" in checkpoint:
     model.load_state_dict(checkpoint["params"])
 elif "state_dict" in checkpoint:
