@@ -1,10 +1,25 @@
 import os
-import urllib.request
+import gdown
+from ultralytics import YOLO
 
-url = "https://drive.google.com/drive/folders/1zkRQZRQQNf0ag2rvMMvWYURl_s66DcfU?usp=sharing"
-save_path = "restormer/model_zoo/defocus_deblurring.pth"
+# -------------------------
+# Restormer weights (Drive)
+# -------------------------
+FILE_ID = "1Ls8ep2FKjscIXde33r3lXK-gQ5TcgTEu"
+url = f"https://drive.google.com/uc?id={FILE_ID}"
 
-os.makedirs(os.path.dirname(save_path), exist_ok=True)
-urllib.request.urlretrieve(url, save_path)
+restormer_path = "restormer/model_zoo/defocus_deblurring.pth"
+os.makedirs(os.path.dirname(restormer_path), exist_ok=True)
 
-print("model weights downloaded successfully")
+print("Downloading Restormer weights...")
+gdown.download(url, restormer_path, quiet=False)
+print("Restormer ready.")
+
+# -------------------------
+# YOLOv11 Segmentation model
+# -------------------------
+print("Downloading YOLOv11 segmentation model...")
+YOLO("yolo11n-seg.pt")  # auto-downloads
+print("YOLOv11 segmentation ready.")
+
+print("\n✅ All model weights ready!")
