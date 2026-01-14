@@ -32,24 +32,6 @@ The pipeline is designed to be **modular**, **experiment-friendly**, and suitabl
 
 ---
 
-##  Repository Structure
-
-
-Blurry_BG/
-│
-├── restormer/
-│   ├── restormer_arch.py        # model architecture
-│   ├── restormer_sharpening.py  # enhancement logic
-│   └── model_zoo/               # (weights excluded from git)
-│
-├── pipeline.py                  # end-to-end processing pipeline
-├── metrics.py                   # image quality metrics
-├── add_weights.py               # downloads pretrained model weights
-├── requirements.txt             # dependencies
-├── .gitignore                   # clean repo rules
-└── README.md
-
----
 
 ##  Model Weights
 
@@ -70,9 +52,11 @@ Make sure this step is completed before executing the main pipeline.
 
 1. Download model weights: python add_weights.py
 
-2. Run the enhancement pipeline: python pipeline.py
+2. Run the enhancement for single image: python pipeline.py (before running save test image as input.jpg)
 
 3. Run metrics.py to get detailed analysis(might take some time)
+
+4. To run model in realtime(preview mode) run real_time.py
 
 
 
