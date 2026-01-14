@@ -50,7 +50,7 @@ Make sure this step is completed before executing the main pipeline.
 
 ##  Usage
 
-1. Download model weights: python add_weights.py
+1. Download model weights: python add_weights.py(This will automatically place the model file at: restormer/model_zoo/defocus_deblurring.pth Make sure this step is completed before executing the main pipeline)
 
 2. Run the enhancement for single image: python pipeline.py (before running save test image as input.jpg)
 
